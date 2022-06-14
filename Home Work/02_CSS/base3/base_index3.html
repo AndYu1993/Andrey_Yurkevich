@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02(3)_CSS</title>
+</head>
+<style>
+    .navigation {
+        background-color: rgb(211, 209, 206);
+        width: 15em;
+        float: left;
+        word-wrap: break-word;
+    }
+    .st {
+        background-color: rgb(146, 142, 142);
+        margin-bottom: 0.2em;
+        width: auto;
+        margin-left: 15em;
+        overflow: hidden;
+    }
+    .footer {
+        background-color: rgb(158, 153, 153);
+        height: auto;
+    }
+    .parent {
+        background-color: rgb(215, 215, 215);
+    }
+    .clear {
+        float: right;
+    }
+    ul li {
+        margin-left: 1.5em;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Шир. 15em</li>
+                <li>Цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации заполниет контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показанно в данном примере</li>
+            </ul>
+        </div>
+        <div class="st">
+            <h3>Статья 1</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех статьях сделать отступ 2em, при помощи св-ва margin-bottom
+            </p>
+        </div>
+        <div class="st">
+            <h3>Статья 2</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи совйства margin-<br>
+                bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+                данной статьи для этой картинки. 
+            </p>
+            <div style="float: right;"><img src="mail.jpg"></div>
+            <div class="clear" style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется контентом</span>
+    </div>
+</body>
+</html>
